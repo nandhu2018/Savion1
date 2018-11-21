@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\DELL\.android\build-cache\64a73de78df7df6a21f4c38a0cc9f0f24ec63249\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="75354b2b15eca969906bf8e4a1e63a34fdfa491c">
+        <dex dex="G:\Savion\app\build\intermediates\pre-dexed\debug\classes_f1be543dabacad755f67f9586ac1bad7d258325b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\DELL\.android\build-cache\86f566cab32cd98b0aa2129032f49f4d82796974\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="8b6359c09fc57995d7c64cf2ff6512a705dbc645">
+        <dex dex="G:\Savion\app\build\intermediates\pre-dexed\debug\classes_b8885ea5adcc87e65d5b333d885876770ab3bb03.jar" />
+    </item>
+
+</items>

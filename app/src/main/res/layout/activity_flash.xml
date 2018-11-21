@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="savion.tns.com.savion.Flash">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+        <info.abdolahi.CircularMusicProgressBar
+            android:id="@+id/album_art"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/logo"
+            app:border_color="@color/colorPrimary"
+            app:border_width="5dp"
+            app:centercircle_diammterer=".97"
+            app:draw_anticlockwise="false"
+            app:progress_color="#fff"
+            app:progress_startAngle="-90" />
+    </LinearLayout>
+
+
+</RelativeLayout>

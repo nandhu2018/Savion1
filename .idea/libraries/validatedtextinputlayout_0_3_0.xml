@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="validatedtextinputlayout-0.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/3f4f895202fc2a6ff79416d55e782994456628c0/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/3f4f895202fc2a6ff79416d55e782994456628c0/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.julianraj/validatedtextinputlayout/0.3.0/50d15a13259b51169e69c0087590b6b0efa81182/validatedtextinputlayout-0.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

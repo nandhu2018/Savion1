@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:validation="http://schemas.android.com/apk/res-auto"
+
+    android:background="#ddd"
+    tools:context=".MainActivity1">
+
+<RelativeLayout
+    android:id="@+id/icon_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/blue_background"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true">
+
+    <Button
+        android:id="@+id/submitbutton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="20dp"
+        android:text="Submit"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/submitbutton"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@+id/profile_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+
+            android:layout_marginTop="20dp">
+    <RelativeLayout
+        android:id="@+id/view_area"
+        android:layout_width="wrap_content"
+        android:background="@color/blue_background"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+                    <com.julianraj.validatedtextinputlayout.ValidatedTextInputLayout
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        validation:autoTrim="true"
+                        android:textColorHint="#fff"
+
+                        validation:isRequired="true"
+                        validation:requiredValidationMessage="Enter Your Name.">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:hint="Name"
+                            android:backgroundTint="#fff"
+                            android:textColorHint="#fff"
+                            android:textColorHighlight="#fff"
+                            android:shadowColor="#fff"
+                            android:textColorLink="#fff"
+                            android:textColor="#fff"
+                            android:digits="qwertyuiopasdfghjklzxcvbnm QWERTYUIOPASDFGHJKLZXCVBNM"
+                            android:singleLine="true"/>
+
+                    </com.julianraj.validatedtextinputlayout.ValidatedTextInputLayout>
+                    <com.julianraj.validatedtextinputlayout.ValidatedTextInputLayout
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        validation:autoTrim="true"
+                        android:textColorHint="#fff"
+                        validation:regex="^[a-z0-9._%+-]+@(?:[a-z0-9-]+[.])+[a-z]{2,}$"
+                        validation:regexValidationMessage="Please provide a valid email.">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Email"
+
+                            android:backgroundTint="#fff"
+                            android:textColorHint="#fff"
+                            android:textColor="#fff"
+                            android:singleLine="true"/>
+                    </com.julianraj.validatedtextinputlayout.ValidatedTextInputLayout>
+                    <com.julianraj.validatedtextinputlayout.ValidatedTextInputLayout
+                        android:id="@+id/mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#fff"
+                        validation:autoTrim="true"
+                        validation:autoValidate="true"
+                        validation:regexValidationMessage="Please provide a valid Mobile.">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Mobile"
+                            android:digits="1234567890"
+
+                            android:backgroundTint="#fff"
+                            android:textColorHint="#fff"
+                            android:inputType="phone"
+                            android:textColor="#fff"
+                            android:textSize="16dp"
+                            android:singleLine="true"/>
+                    </com.julianraj.validatedtextinputlayout.ValidatedTextInputLayout>
+                    <com.julianraj.validatedtextinputlayout.ValidatedTextInputLayout
+                        android:id="@+id/place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        validation:autoTrim="true"
+                        validation:isRequired="true"
+                        android:textColorHint="#fff"
+                        validation:autoValidate="true"
+                        validation:regexValidationMessage="Please provide a valid Place.">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Place"
+                            android:textSize="16dp"
+
+                            android:backgroundTint="#fff"
+                            android:textColorHint="#fff"
+                            android:textColor="#fff"
+                            android:digits="qwertyuiopasdfghjklzxcvbnm QWERTYUIOPASDFGHJKLZXCVBNM"
+                            android:singleLine="true"/>
+                    </com.julianraj.validatedtextinputlayout.ValidatedTextInputLayout>
+                    <com.julianraj.validatedtextinputlayout.ValidatedTextInputLayout
+                        android:id="@+id/vehicleno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        validation:isRequired="true"
+                        validation:autoTrim="true"
+                        android:textColorHint="#fff"
+                        validation:autoValidate="true"
+                        validation:regexValidationMessage="Please provide a valid Vehicle number.">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="true"
+                            android:textSize="16dp"
+
+                            android:backgroundTint="#fff"
+                            android:textColorHint="#fff"
+                            android:textColor="#fff"
+                            android:hint="Vehicle Number"
+                            android:singleLine="true"/>
+                    </com.julianraj.validatedtextinputlayout.ValidatedTextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/date"
+                        android:layout_width="match_parent"
+                        android:textColorHint="#fff"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+
+                            android:backgroundTint="#fff"
+                            android:textColorHint="#fff"
+                            android:textColor="#fff"
+                            android:focusableInTouchMode="false"
+                            android:hint="Date"/>
+
+                    </android.support.design.widget.TextInputLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Preferred Time :"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="15sp"
+                        android:textColor="#fff"/>
+                    <Spinner
+                        android:id="@+id/preftime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#fff"
+                        android:layout_marginTop="5dp"/>
+                    <include android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_margin="5dp"
+                        layout="@layout/typeofservice"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Preferred Date :"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="15sp"
+                        android:visibility="gone"
+                        android:textColor="#fff"/>
+
+
+
+                    <include android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_margin="5dp"
+                        layout="@layout/typeofvehicle"/>
+                    <include android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_margin="5dp"
+
+                        layout="@layout/remarks"/>
+                </LinearLayout>
+               <!-- <com.unstoppable.submitbuttonview.SubmitButton
+                    android:id="@+id/submitbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    card_view:buttonText="Submit"
+                    card_view:buttonColor="@color/colorPrimary"
+                    card_view:succeedColor="@color/colorPrimary"
+                    android:layout_alignParentBottom="true"
+
+                    />-->
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+        </ScrollView>
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/corner"
+        android:layout_marginTop="0dp"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentRight="true" />
+</RelativeLayout>
+</RelativeLayout>

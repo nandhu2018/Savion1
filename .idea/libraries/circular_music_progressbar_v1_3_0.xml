@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="circular-music-progressbar-v1.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/d8f293e3ab0313ba4013f555b23a9094311fd1bd/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/d8f293e3ab0313ba4013f555b23a9094311fd1bd/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.aliab/circular-music-progressbar/v1.3.0/ed17a0c9fb543ede748df5f9202b67e952a8cc9e/circular-music-progressbar-v1.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

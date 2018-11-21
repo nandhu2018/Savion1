@@ -1,0 +1,86 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+    </style>
+
+
+    <style name="MyToolbarTheme"
+        parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="colorControlNormal">#fff</item>
+        <item name="titleTextColor">#fff</item>
+    </style>
+   <!-- &lt;!&ndash; Animated indicators &ndash;&gt;
+    <style name="WelcomeScreenPageIndicator.Animated">
+        <item name="animation">slide</item>
+    </style>
+
+    <style name="WelcomeScreenPageIndicator.Light.Animated">
+        <item name="animation">slide</item>
+    </style>
+
+    &lt;!&ndash; Styles used by most of the welcome screens &ndash;&gt;
+    <style name="GeneralWelcomeScreenTheme" parent="WelcomeScreenTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="welcomeIndicatorStyle">@style/WelcomeScreenPageIndicator.Animated</item>
+        <item name="welcomeTitleTextStyle">@style/WelcomeScreenText.Title.Centered</item>
+    </style>
+
+    &lt;!&ndash; Styles for SampleWelcomeActivity &ndash;&gt;
+    <style name="SampleWelcomeScreenTheme" parent="WelcomeScreenTheme">
+        <item name="welcomeIndicatorStyle">@style/WelcomeScreenPageIndicator.Animated</item>
+        <item name="welcomeTitleTextStyle">@style/WelcomeScreenText.Title.Centered</item>
+        <item name="welcomeLargeTextStyle">@style/WelcomeScreenText.Large.Centered</item>
+        <item name="welcomeNormalTextStyle">@style/WelcomeScreenText.Centered</item>
+    </style>
+
+
+    &lt;!&ndash; Styles for LightWelcomeActivity &ndash;&gt;
+    <style name="LightWelcomeScreenTheme" parent="WelcomeScreenTheme.Light">
+        <item name="welcomeIndicatorStyle">@style/LightWelcomeIndicator</item>
+        <item name="welcomeTitleTextStyle">@style/WelcomeScreenText.Title.Centered</item>
+        <item name="android:textColorPrimary">#0089DC</item>
+        <item name="android:textColorSecondary">#666</item>
+    </style>
+
+    <style name="LightWelcomeIndicator" parent="WelcomeScreenPageIndicator.Light.Animated">
+        <item name="currentPageColor">@color/colorAccent</item>
+        <item name="animation">fade</item>
+    </style>
+
+    &lt;!&ndash; Styles for button bar activities &ndash;&gt;
+    <style name="ButtonBarWelcomeScreenTheme" parent="WelcomeScreenTheme.SolidNavigation">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ButtonBarWelcomeScreenTheme.Single">
+        <item name="welcomeButtonBarFirstStyle">@style/SingleButtonStyle</item>
+    </style>
+
+    <style name="SingleButtonStyle" parent="WelcomeScreenButton.Borderless">
+        <item name="android:text">Get Started</item>
+    </style>
+
+    &lt;!&ndash; Styles to show action bar &ndash;&gt;
+    <style name="ActionBarWelcomeScreenTheme" parent="WelcomeScreenTheme">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+    </style>-->
+ <!--   <style name="com.julianraj.validatedtextinputlayout.ValidatedTextInputLayout" parent="@android:style/TextAppearance">
+        <item name="colorControlNormal">#fff</item>
+        <item name="colorControlActivated">#fff</item>
+        <item name="colorControlHighlight">#fff</item>
+    </style>
+-->
+
+</resources>

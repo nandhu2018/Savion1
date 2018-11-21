@@ -1,0 +1,137 @@
+<RelativeLayout android:id="@+id/linearList"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F9F9F9"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/tools">
+    <!-- <pl.droidsonroids.gif.GifTextView
+         android:layout_width="match_parent"
+         android:layout_height="120dp"
+         android:background="@color/colorPrimaryDark"
+         />-->
+    <com.mreram.ticketview.TicketView
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+        app:tv_anchor1="@+id/cl_head"
+        app:tv_anchor2="@+id/cl_center"
+        android:layout_margin="10dp"
+        app:tv_circleSpace="15dp"
+        app:tv_dashSize="1.5dp"
+        app:tv_dashColor="@color/colorPrimary"
+        app:tv_circleRadius="9dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:visibility="gone"
+                android:layout_centerVertical="true"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:layout_toRightOf="@id/profile_image"
+                android:paddingLeft="3dp">
+                <TextView
+                    android:id="@+id/vehicleno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="number"
+                    android:layout_margin="5dp"
+                    android:textColor="#000"
+                    android:textAllCaps="true"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+                <!-- <TextView
+                     android:id="@+id/name"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignLeft="@+id/age"
+                     android:layout_below="@+id/profileid"
+                     android:text="Name"
+                     android:textColor="#000"
+                     android:textSize="14dp"
+                     android:textStyle="bold" />-->
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Name"
+                    android:layout_margin="5dp"
+                    android:textColor="#000"
+                    android:textSize="14dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_margin="5dp"
+                    android:text="mobile"
+                    android:textSize="14dp"
+                    android:textStyle="normal"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="place"
+                    android:layout_margin="5dp"
+                    android:textSize="14dp"
+                    android:textColor="#000"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="date"
+                    android:textSize="14dp"
+                    android:textColor="#000"
+                    android:layout_margin="5dp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="time"
+                    android:textSize="14dp"
+                    android:layout_margin="5dp"
+                    android:textColor="#000"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <!--<Button
+                android:id="@+id/btncall"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/colorPrimary"
+                android:text="View"
+                android:textColor="@android:color/white" />-->
+        </RelativeLayout>
+
+    </com.mreram.ticketview.TicketView>
+
+</RelativeLayout>
